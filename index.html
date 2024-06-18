@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth; overflow-x: hidden">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="w-screen sticky top-0 sm:h-[10vh] bg-emerald-600 flex items-center justify-between sm:px-20 px-2">
+    <div id="header-logo" class="text-3xl text-white font-mono">
+      <a href="#">Ashfaque</a>
+    </div>
+
+    <nav id="navbar" class="grid place-items-center">
+        <div id="mobile-menu-trigger" class="sm:hidden visible hamburger-menu-icon text-3xl text-white font-bold font-mono pr-2">
+          &#9776
+        </div>
+      <ul class="sm:flex hidden items-center justify-center gap-5 text-white text-xl capitalize font-mono">
+        <li>
+          <a href="#" class="hover:transition-all hover:text-black hover:font-bold">home</a>
+        </li>
+        <li>
+          <a class="hover:transition-all hover:text-black hover:font-bold" href="#about">about</a>
+        </li>
+        <li>
+          <a class="hover:transition-all hover:text-black hover:font-bold" href="#services">services</a>
+        </li>
+        <li>
+          <a class="hover:transition-all hover:text-black hover:font-bold" href="#projects">projects</a>
+        </li>
+        <li>
+          <a class="hover:transition-all hover:text-black hover:font-bold" href="#contact">contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- mobile navigation menu -->
+  <div style="display: none;"  id="mobile-menu" class="mobile-menu sticky top-9 w-screen h-screen bg-emerald-600 float-right">
+    <ul class="w-full h-[90%] flex flex-col items-center justify-center gap-10 capitalize text-white text-2xl text-center underline">
+        <li class=""><a href="#">home</a></li>
+        <li class=""><a href="#about">about</a></li>
+        <li class=""><a href="#services">services</a></li>
+        <li class=""><a href="#projects">projects</a></li>
+        <li class=""><a href="#contact">contact</a></li>
+    </ul>
+</div> 
+
+  <main>
+   
+    <div id="home" class="w-screen h-[100vh] flex sm:flex-row flex-col items-center sm:justify-between justify-start sm:px-10 sm:gap-8">
+      <div id="home-profile" class="w-[100%] h-[50%] flex items-center justify-center">
+        <div id="profile" class="sm:w-72 sm:h-72 w-[90%] h-[90%] border-8 border-emerald-600  rounded-full">
+         
+        </div>
+      </div>
+      <div class="home-desc">
+        <h1 class="text-3xl font-bold capitalize my-3 sm:text-left text-center">hello, myslef</h1>
+        <h1 class="text-5xl font-bold capitalize my-3 sm:text-left text-center">Ashfaque Ahmed</h1>
+        <h1 class="text-3xl font-bold capitalize my-3 sm:text-left text-center">
+          <span>and i'am a</span>
+          <span class="text-emerald-700"> FullStack web developer</span>
+        </h1>
+        <p class="text-md font-mono font-bold my-3 sm:text-left text-justify sm:mx-0 mx-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          veniam atque magnam deserunt asperiores obcaecati! Quos obcaecati
+          qui, repellendus labore tempore dolor fugit fugiat eos sint. Tempora
+          voluptas repudiandae exercitationem?
+        </p>
+
+        <div class="icons-links flex gap-4 mb-5 sm:justify-normal justify-center">
+
+          <span id="linkedin" class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600">
+            <a href="https://www.linkedin.com" target="_blank">
+            <img src="./icons/linkedin.svg" width="25px" alt="linkedin" />
+           </a>
+          </span>
+    
+          <span class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600" id="github">
+            <a href="https://www.github.com" target="_blank">
+            <img src="./icons/github.svg" width="25px" alt="github" />
+            </a>
+            </span>
+    
+    
+          <span class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600" id="facebook">
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="./icons/facebook.svg" width="25px" alt="facebook" />
+            </a>
+          </span>
+    
+    
+          <span class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600" id="instagram">
+            <a href="https://www.instagram.com" target="_blank">
+            <img src="./icons/square-instagram.svg" width="25px" alt="instagram" />
+            </a>
+          </span>
+    
+    
+        </div>
+
+        <div class="buttons w-[100vw]">
+
+          <a href="CV.txt" download="CV.txt" class="px-4 py-2 w-fit border-2 border-transparent cursor-pointer rounded-3xl bg-emerald-600 text-white capitalize my-4 flex gap-2 items-center sm:m-0 m-auto">
+            <span>
+              <img src="./icons/circle-arrow-down-solid.svg" width="20px">
+            </span>
+            <span>download CV</span>
+          </a>
+
+        <button id="download-cv-btn"
+          class="px-5 py-2  border-2 border-transparent rounded-3xl bg-emerald-600 text-white capitalize flex gap-2 items-center sm:mx-0 m-auto sm:mt-2 sm:mb-4 mt-2 mb-2 ">
+          <span>hire me for job</span>
+        </button>
+      
+      </div>
+
+      </div>
+    </div>
+
+
+    <div id="about" class="w-screen h-[100vh] sm:px-24 flex items-center justify-center gap-8 bg-emerald-100 sm:text-left text-center ">
+      <div class="about-left">
+        <h1 class="text-5xl capitalize font-bold my-2 sm:text-left text-center">
+          About <span class="capitalize text-emerald-600">me</span>
+        </h1>
+        <h2 class="text-3xl capitalize font-bold my-2 sm:text-left text-center">
+          i'am a
+          <span class="text-emerald-600 sm:text-left text-center">fullStack(MERN) Developer</span>
+        </h2>
+        <p class="text-md font-bold font-mono capitalize my-10 sm:text-left text-justify sm:mx-0 mx-5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, quod atque ab consequuntur, culpa quaerat quia sequi fuga recusandae molestiae eligendi ipsum ut provident tempore voluptas quam fugit, explicabo labore rerum exercitationem! Provident quam ipsa esse necessitatibus pariatur quis repellat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at magnam pariatur quidem maiores nesciunt impedit cum provident ipsum quae laboriosam totam saepe quo architecto aspernatur, voluptates, quis perspiciatis exercitationem amet veniam velit voluptatum explicabo, doloremque perferendis. Quos, nemo aliquam?
+        </p>
+        <a href="#projects"
+          class="btn border-2 border-transparent px-4 py-2 rounded-3xl bg-emerald-600 text-white capitalize cursor-pointer">
+          see my projects
+      </a>
+      </div>
+    </div>
+
+
+    <div id="services" class="w-screen min-h-[100vh] h-auto flex flex-col items-center sm:px-24 py-24 sm:mb-0 mb-24 ">
+      <h1 class="text-4xl capitalize font-bold my-4">
+        my <span class="text-emerald-600 my-10">services</span>
+      </h1>
+
+      <div class="services-cards w-screen h-full grid sm:grid-cols-3 grid-cols-1 gap-5 sm:px-20 px-5">
+        <div
+          class="card bg-emerald-200 rounded-3xl flex items-center justify-center text-center px-10 py-2 border-2 border-transparent">
+          <div class="logo">
+            <img src="./icons/code-solid.svg" width="45px" alt="" class="m-auto" />
+            <p class="title text-2xl capitalize text-center font-bold my-2">
+              frontend development
+            </p>
+            <p class="text-justify font-mono my-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dolorum, unde voluptatem labore hic nihil exercitationem quasi
+              recusandae. Recusandae, vel officia?
+            </p>
+            <button class="btn px-4 py-1 bg-emerald-600 text-white cursor-pointer text-center rounded-3xl my-2 border-2 border-transparent">
+              frontend projects
+            </button>
+          </div>
+        </div>
+        <div
+          class="card bg-emerald-200 rounded-3xl flex items-center justify-center text-center px-10 py-2 border-2 border-transparent">
+          <div class="logo">
+            <img src="./icons/code-solid.svg" width="45px" alt="" class="m-auto" />
+            <p class="title text-2xl capitalize text-center font-bold my-2">
+              backend development
+            </p>
+            <p class="text-justify font-mono my-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dolorum, unde voluptatem labore hic nihil exercitationem quasi
+              recusandae. Recusandae, vel officia?
+            </p>
+            <button class="btn px-4 py-1 bg-emerald-600 text-white cursor-pointer text-center rounded-3xl my-2 border-2 border-transparent">
+              backend projects
+            </button>
+          </div>
+        </div>
+        <div
+          class="card bg-emerald-200 rounded-3xl flex items-center justify-center text-center px-10 py-2 border-2 border-transparent">
+          <div class="logo">
+            <img src="./icons/code-solid.svg" width="45px" alt="" class="m-auto" />
+            <p class="title text-2xl capitalize text-center font-bold my-2">
+              fullstack (MERN stack) development
+            </p>
+            <p class="text-justify font-mono my-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dolorum, unde voluptatem labore hic nihil exercitationem quasi
+              recusandae. Recusandae, vel officia?
+            </p>
+            <button class="btn px-4 py-1 bg-emerald-600 text-white cursor-pointer text-center rounded-3xl my-2 border-2 border-transparent">
+              full stack projects
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div id="projects" class="w-screen min-h-[100vh] h-auto flex flex-col items-center justify-center gap-10 bg-emerald-100 py-5">
+    <h1 class="text-5xl capitalize font-bold">my <span class="text-emerald-600">projects</span></h1>
+    <div class="projects-container grid sm:grid-cols-3 grid-cols-1 sm:px-20 px-5 gap-10">
+      <div class="card h-72 sm:w-[25vw] w-[90vw] border-2 border-transparent bg-white p-5 rounded-3xl">
+        <h1 class="text-2xl capitalize font-bold border-b-2 border-b-emerald-600 mb-10">frontend</h1>
+        <ul>
+          <li type="circle" class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Amazon Clone</a>
+          </li>
+          <li type="circle"  class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Netflix Clone</a>
+          </li>
+          <li  type="circle" class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Snake Game</a>
+          </li>
+        </ul>
+        <button class="btn px-4 py-2 my-3 bg-emerald-600 text-white capitalize rounded-3xl cursor-pointer border-2 border-transparent flex items-center gap-2">
+          <span>see more</span>
+          <span>
+            <img src="./icons/share-solid.svg" width="20px">
+          </span>
+        </button>
+      </div>
+      <div class="card h-72 sm:w-[25vw] w-[90vw] border-2 border-transparent bg-white p-5 rounded-3xl">
+        <h1 class="text-2xl capitalize font-bold border-b-2 border-b-emerald-600  mb-10">backend</h1>
+
+        <ul>
+          <li type="circle" class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Amazon Clone</a>
+          </li>
+          <li type="circle"  class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Netflix Clone</a>
+          </li>
+          <li  type="circle" class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Snake Game</a>
+          </li>
+        </ul>
+        <button class="btn px-4 py-2 my-3 bg-emerald-600 text-white capitalize rounded-3xl cursor-pointer border-2 border-transparent flex items-center gap-2">
+          <span>see more</span>
+          <span>
+            <img src="./icons/share-solid.svg" width="20px">
+          </span>
+        </button>
+      </div>
+      <div class="card h-72 sm:w-[25vw] w-[90vw] border-2 border-transparent bg-white p-5 rounded-3xl ">
+        <h1 class="text-2xl capitalize font-bold border-b-2 border-b-emerald-600  mb-10">full stack</h1>
+
+        <ul>
+          <li type="circle" class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Amazon Clone</a>
+          </li>
+          <li type="circle"  class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Netflix Clone</a>
+          </li>
+          <li  type="circle" class="text-xl font-bold font-mono my-2 ml-5">
+            <a href="#">Snake Game</a>
+          </li>
+        </ul>
+        <button class="btn px-4 py-2 my-3 bg-emerald-600 text-white capitalize rounded-3xl cursor-pointer border-2 border-transparent flex items-center gap-2">
+          <span>see more</span>
+          <span>
+            <img src="./icons/share-solid.svg" width="20px">
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+      
+  <div id="contact" class="w-screen h-[100vh] flex flex-col items-center justify-center gap-2 text-center mt-10 px-2">
+    <h1 class="text-4xl text-emerald-600 capitalize font-bold">contact <span class="text-black">me</span></h1>
+    <form action="mailto:ashfaqueahmed2342@gmail.com" class="contact-form">
+     <div class="grid sm:grid-cols-2 grid-cols-1 grid-row gap-3 mb-3">
+       <input id="fullname" placeholder="full Name" type="text" class="border-2 border-emerald-600 rounded-md outline-none p-1" required>
+       <input id='email' placeholder="Email Address" type="email" class="border-2 border-emerald-600 rounded-md outline-none p-1" required>
+       <input id="phone-number" placeholder="Phone Number" type="number" class="border-2 border-emerald-600 rounded-md outline-none p-1" required>
+       <input id="subject" placeholder="Email subject" type="text" class="border-2 border-emerald-600 rounded-md outline-none p-1" required>
+     </div>
+     <div>
+       <textarea id="email-content" placeholder="Your Message" rows="10" class="border-2 border-emerald-600 rounded-lg outline-none p-2 w-full"></textarea>
+     </div>
+     <button type="submit" class="btn px-4 py-2 rounded-3xl bg-emerald-600 text-white capitalize my-2 border-2 border-transparent flex items-center m-auto gap-2">
+       <span>send message</span>
+       <span>
+         <img src="./icons/paper-plane-solid.svg" width="20px" alt="">
+       </span>
+     </button>
+    </form>
+</div>
+  </main>
+
+  <footer class="w-screen h-[30vh] bg-emerald-200 flex flex-col items-center justify-center">
+
+    <h1 class="my-6 text-xl  capitalize font-mono">get in touch :</h1>
+
+    <div class="icons-links flex gap-4 mb-5">
+
+      <span id="linkedin" class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600">
+        <a href="https://www.linkedin.com" target="_blank">
+        <img src="./icons/linkedin.svg" width="25px" alt="linkedin" />
+       </a>
+      </span>
+
+      <span class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600" id="github">
+        <a href="https://www.github.com" target="_blank">
+        <img src="./icons/github.svg" width="25px" alt="github" />
+        </a>
+        </span>
+
+
+      <span class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600" id="facebook">
+        <a href="https://www.facebook.com" target="_blank">
+        <img src="./icons/facebook.svg" width="25px" alt="facebook" />
+        </a>
+      </span>
+
+
+      <span class="icon w-30 h-30 bg-transparent p-2 rounded-full border-2 border-emerald-600" id="instagram">
+        <a href="https://www.instagram.com" target="_blank">
+        <img src="./icons/square-instagram.svg" width="25px" alt="instagram" />
+        </a>
+      </span>
+
+
+    </div>
+    <p class="text-md capitalize font-mono">
+      © Ashfaque Ahmed - All Rights Reserved
+    </p>
+  </footer>
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
